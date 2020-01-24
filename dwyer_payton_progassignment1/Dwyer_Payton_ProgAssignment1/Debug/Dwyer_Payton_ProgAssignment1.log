@@ -1,0 +1,9 @@
+﻿  Dwyer_Payton_ProgAssignment1.cpp
+C:\Users\MyNam\OneDrive\CPSC360Assignments\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1.cpp(19,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\MyNam\OneDrive\CPSC360Assignments\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1.cpp(26,18): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\MyNam\OneDrive\CPSC360Assignments\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1.cpp(36,31): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\MyNam\OneDrive\CPSC360Assignments\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1.cpp(81,27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\MyNam\OneDrive\CPSC360Assignments\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1.cpp(128,18): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\MyNam\OneDrive\CPSC360Assignments\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1.cpp(137,27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\MyNam\OneDrive\CPSC360Assignments\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1\Dwyer_Payton_ProgAssignment1.cpp(186,31): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Dwyer_Payton_ProgAssignment1.vcxproj -> C:\Users\MyNam\OneDrive\CPSC360Assignments\Dwyer_Payton_ProgAssignment1\Debug\Dwyer_Payton_ProgAssignment1.exe
