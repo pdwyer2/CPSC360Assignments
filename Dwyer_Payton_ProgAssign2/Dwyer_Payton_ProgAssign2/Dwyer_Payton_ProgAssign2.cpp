@@ -6,6 +6,7 @@ int main() {
 	const int ROWS = 15;
 	const int SEATS_PER_ROW = 30;
 	int ticketsToPurchase;
+	int tickets = 0;
 	int seatRowNumber;
 	int seatSeatNumber;
 	int orderTotal;
@@ -60,7 +61,7 @@ int main() {
 			std::cin >> ticketsToPurchase;
 			orderTotal = 0;
 			cartTotal = 0;
-				for (int i = 1; i < ticketsToPurchase + 1; i++) {
+			do {
 					std::cout << "Please enter desired Row number: ";
 					std::cin >> seatRowNumber;
 					seatRowNumber = seatRowNumber - 1;
@@ -73,6 +74,7 @@ int main() {
 							std::cout << "Cost of this ticket: $50" << std::endl;
 							cartTotal += 50;
 							seatSale += 1;
+							tickets = tickets + 1;
 							concertSeats[seatRowNumber][seatSeatNumber] = '*';
 						}
 						else {
@@ -80,20 +82,17 @@ int main() {
 							std::cout << "Cost of this ticket: $40" << std::endl;
 							cartTotal += 40;
 							seatSale += 1;
+							tickets = tickets + 1;
 							concertSeats[seatRowNumber][seatSeatNumber] = '*';
 						}
 					}
 					else if (concertSeats[seatRowNumber][seatSeatNumber] == '*') {
 						std::cout << "We are sorry, that seat is already taken, please choose another." << std::endl;
-						i -= i;
-						continue;
 					}
 					else {
 						std::cout << "You must enter a valid row and seat number." << std::endl;
-						i -= i;
-						continue;
 					}
-				}
+			} while (tickets != ticketsToPurchase);
 			orderTotal += cartTotal;
 			std::cout << "The total cost for your order is: " << "$" << orderTotal << std::endl;
 			totalSales += orderTotal;
