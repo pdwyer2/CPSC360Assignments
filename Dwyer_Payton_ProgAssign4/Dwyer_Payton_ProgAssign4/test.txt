@@ -1,0 +1,1 @@
+Hello my friends. This is my text file. Hopefully it appears in Visual Studio.
