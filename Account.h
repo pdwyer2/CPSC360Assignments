@@ -18,7 +18,6 @@ public:
 	//constructors for account class
 	Account();
 	Account(std::string name, int n, double b);
-	Account(const Account& right);
 
 protected:
 	std::string Owner;
