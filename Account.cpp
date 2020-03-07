@@ -23,7 +23,7 @@ void Account::setAccountBalance(double b) {
 
 //constructors default and non default
 Account::Account() {
-	Owner = "No Name";
+	Owner = "";
 	AccountNum = 0;
 	AccountBalance = 0.0;
 }
@@ -32,11 +32,7 @@ Account::Account(std::string name, int n, double b) {
 	AccountNum = n;
 	AccountBalance = b;
 }
-Account::Account(const Account& right) {
-	Owner = right.Owner;
-	AccountNum = right.AccountNum;
-	AccountBalance = right.AccountBalance;
-}
+
 //Checking account class definitions
 void CheckingAccount::deposit(double amount) {
 	AccountBalance += amount;
@@ -61,8 +57,8 @@ void LoanAccount::payBalance(double amount) {
 	AccountBalance -= amount;
 }
 void LoanAccount::calcInterest() {
-	float temp = intRate * AccountBalance;
-	AccountBalance -= temp;
+	float in = intRate * AccountBalance;
+	AccountBalance -= in;
 }
 LoanAccount::LoanAccount(std::string name, int n, double interest, double b) : Account(name, n, b) {
 	Owner = name;
