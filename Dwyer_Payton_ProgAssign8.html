@@ -1,0 +1,42 @@
+<script type = "text/javascript">
+let userString = prompt("Enter a string of text: ");
+
+//Declares an array to hold the words containing E
+let wordsWithE = [];
+userString = userString.split(" ");
+
+//Outer loop moves through each word in the user entered string
+for(let i = 0; i < userString.length; i++) {
+	let word = userString[i];
+	//Inner loop determines the length of each word in the user entered string
+	for(let k = 0; k < word.length; k++) {
+	//Checks each word in the string for containing e and if so it will add the word to
+	//the array for words containing e
+		if ((word[k].includes("e")) || (word[k].includes("E"))) {
+			wordsWithE.push(word);
+			break;
+		}
+	}
+}
+
+//Function that calculates the longest word containing e
+//This function has the parameter for the array with words containing e
+function longWordWithE(wordsWithE) {
+	let longestEWord = "";
+	//Loop that moves through each word in the array of words containing e
+	for (let i = 0; i < wordsWithE.length; i++) {
+		//if that word is longer than the previous one it will become the new longest e word
+		if (wordsWithE[i].length > longestEWord.length) {
+			longestEWord = wordsWithE[i];
+		}
+	}
+	return longestEWord;
+}
+//calls the function for determining the longest e word
+let longestWordWithE = longWordWithE(wordsWithE);
+
+//Alerts for displaying the assessments to the user
+alert("Number of words that contain letter e: " + wordsWithE.length);
+alert("Longest word that contains letter e: " + longestWordWithE);
+alert("Number of characters in longest word containing letter e: " + longestWordWithE.length);
+</script>
